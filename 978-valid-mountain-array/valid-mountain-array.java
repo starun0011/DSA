@@ -5,7 +5,7 @@ class Solution {
 
         int peak = arr[1], l = arr[0];
         int i = 1;
-        boolean isMount = false, isInc = arr[0] < arr[1] ? true : false, isDec = false; //1 2 3 4 2 5 2 0
+        boolean isMount = false, isInc = true, isDec = false; //9 2 3 4 2 5 2 0
         while (i < arr.length) {
             if (isInc) {
                 if (arr[i] > l) {
