@@ -1,11 +1,5 @@
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-    //    int i=m;
-    //     for(int ele:nums2){
-    //         nums1[i++] = ele;
-    //     }
-    //    Arrays.sort(nums1);
-
     int p1= m+n-1, p2=m-1, p3=n-1;
     for(int i=p1; i>=0;i--){
         if(p2>=0 && p3>=0){
