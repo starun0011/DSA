@@ -1,0 +1,21 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+       int[] arr = {-3,1,2,3,45,45};
+       System.out.println(isArraySorted(arr));
+       
+    }
+    public static boolean isArraySorted(int[] arr){
+       if(arr==null || arr.length <=1){
+           return true;
+       }
+       for(int i=1; i<arr.length; i++){
+           if(arr[i]<=arr[i-1]){
+               return false;
+           }
+       }
+       return true;
+    }
+}
